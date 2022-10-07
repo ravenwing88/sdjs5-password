@@ -30,13 +30,18 @@ function changeInput() {
 
 function inputNum(num) {
     let mod;
-    if (num % 2 === 0) {
-        mod = "even";
+    if (num) {
+        if (num % 2 === 0) {
+            mod = "even";
+        }
+        else {
+            mod = "odd";
+        }
+        alert(`${num} is ${mod}.`);
     }
     else {
-        mod = "odd";
+        alert("You must enter a number.");
     }
-    alert(`${num} is ${mod}.`);
 }
 
 function inputPass(pass) {
